@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Aloha Color Painting Co.</title>
+<meta name="description" content="Admin panel for Aloha Color Painting Co.">
+<meta property="og:title" content="Admin Dashboard | Aloha Color Painting Co.">
+<meta property="og:description" content="Admin panel for Aloha Color Painting Co.">
+<meta property="og:image" content="https://picsum.photos/1200/630?random=401">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Aloha Color Painting Co.",
+  "description": "Vibrant finishes for island homes",
+  "telephone": "(808) 555-0105",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "220 Lehua Ave",
+    "addressLocality": "Pearl City",
+    "addressRegion": "HI",
+    "postalCode": "96782"
+  },
+  "url": "https://alohacolorpainting.com",
+  "openingHours": "Mo-Fr 07:00-17:00",
+  "priceRange": "$$"
+}
+</script>
+</head>
+<body>
+<div id="adminLock" class="admin-lock">
+  <div class="lock-card">
+    <div class="lock-icon">🔐</div>
+    <h2>Admin Access</h2>
+    <p>Enter password to access the dashboard</p>
+    <form id="lockForm">
+      <input type="password" id="adminPw" class="lock-input" placeholder="••••••••" autocomplete="current-password">
+      <button type="submit" class="lock-btn">Unlock Dashboard</button>
+      <p class="lock-error" id="lockError">Incorrect password. Try again.</p>
+    </form>
+  </div>
+</div>
+
+<div id="adminPanel" class="admin-panel">
+  <div class="admin-header">
+    <h1>🎨 Aloha Color Admin</h1>
+    <span style="font-size:0.875rem;opacity:0.85;">Pearl City, Oahu</span>
+  </div>
+  <div class="admin-body">
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">31</div><div class="stat-label">Total Bookings (MTD)</div></div>
+      <div class="stat-card"><div class="stat-num">$54,200</div><div class="stat-label">Revenue Estimate (MTD)</div></div>
+      <div class="stat-card"><div class="stat-num">9</div><div class="stat-label">Pending Estimates</div></div>
+      <div class="stat-card"><div class="stat-num">14</div><div class="stat-label">New Leads (This Week)</div></div>
+    </div>
+
+    <h3 class="admin-section-title">Pending Estimate Requests</h3>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead><tr><th>Client</th><th>Service</th><th>Date Requested</th><th>Phone</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Leilani Kahananui</td><td>Exterior Painting</td><td>Jun 28, 2025</td><td>(808) 555-1001</td><td><span class="status-badge status-pending">Pending</span></td></tr>
+          <tr><td>Marcus Tuilagi</td><td>Interior — 4 Rooms</td><td>Jun 27, 2025</td><td>(808) 555-1002</td><td><span class="status-badge status-confirmed">Confirmed</span></td></tr>
+          <tr><td>Patricia Morales</td><td>Deck Staining</td><td>Jun 26, 2025</td><td>(808) 555-1003</td><td><span class="status-badge status-pending">Pending</span></td></tr>
+          <tr><td>Damien Akana Jr.</td><td>Commercial — Office</td><td>Jun 25, 2025</td><td>(808) 555-1004</td><td><span class="status-badge status-confirmed">Confirmed</span></td></tr>
+          <tr><td>Noelani Fong</td><td>Exterior + Deck</td><td>Jun 24, 2025</td><td>(808) 555-1005</td><td><span class="status-badge status-pending">Pending</span></td></tr>
+          <tr><td>Robert Yasuda</td><td>Interior — Full Home</td><td>Jun 23, 2025</td><td>(808) 555-1006</td><td><span class="status-badge status-confirmed">Confirmed</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="admin-section-title">Recent Inquiries</h3>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead><tr><th>Name</th><th>Message</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Kevin Shimabukuro</td><td>Asking about elastomeric coating for stucco home in Aiea</td><td>Jun 28, 2025</td><td><span class="status-badge status-new">New</span></td></tr>
+          <tr><td>Jennifer Leong</td><td>Requesting color consultation for condo in Honolulu high-rise</td><td>Jun 27, 2025</td><td><span class="status-badge status-new">New</span></td></tr>
+          <tr><td>Sam Kahele</td><td>Need exterior quote for 3,200 sq ft home in Kaneohe</td><td>Jun 26, 2025</td><td><span class="status-badge status-confirmed">Responded</span></td></tr>
+          <tr><td>Tina Nakashima</td><td>HOA approval question — need to repaint per new color scheme</td><td>Jun 25, 2025</td><td><span class="status-badge status-confirmed">Responded</span></td></tr>
+          <tr><td>Aaron Pila</td><td>Looking for epoxy garage floor coating in Pearl City</td><td>Jun 24, 2025</td><td><span class="status-badge status-new">New</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
